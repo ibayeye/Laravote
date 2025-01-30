@@ -16,6 +16,7 @@ class TambahController extends Controller
     // app/Http/Controllers/TambahController.php
     public function store(Request $request)
     {
+        dd($request->all());
         $request->validate([
             'name' => 'required|string|max:255',
             'description' => 'required|string',
